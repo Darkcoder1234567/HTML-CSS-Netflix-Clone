@@ -324,3 +324,137 @@ footer {
 }
 
 /***** End scrollbar Section *****/
+
+/***** Section media screen *****/
+
+@media screen and (width <= 768px) {
+  .header .header-content h1 {
+    font-size: 45px;
+    line-height: 54px;
+  }
+}
+@media screen and (width <= 568px) {
+  .header .nav-bar .logo {
+    width: 100px;
+  }
+  .header .header-content h1 {
+    font-size: 35px;
+    line-height: 44px;
+  }
+  .header {
+    & .btn-container button {
+      border: 0;
+      outline: 0;
+      background: #db0001;
+      color: #fff;
+      padding: 5px 15px;
+      font-size: 10px;
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      -o-border-radius: 4px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    & .btn-container .lan-btn {
+      display: inline-flex;
+      align-items: center;
+      background: transparent;
+      border: 1px solid #fff;
+      padding: 5px 8px;
+    }
+    & .btn-container .lan-btn img {
+      width: 8px;
+      margin-left: 8px;
+    }
+  }
+  .header .header-content {
+    & .email-signup {
+      background: #fff;
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      -o-border-radius: 4px;
+      display: flex;
+      align-items: center;
+      margin: 20px auto 60px;
+      max-width: 600px;
+      overflow: hidden;
+
+      & input {
+        flex: 1;
+        border: 0;
+        outline: 0;
+        margin-left: 20px;
+      }
+      & button {
+        background: #db0001;
+        border: 0;
+        outline: 0;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+        padding: 6px 35px;
+      }
+    }
+  }
+  .features .row .text-col h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .features .row .text-col p {
+    font-size: 16px;
+  }
+  .features .row {
+    flex-direction: column;
+  }
+  .features .row .text-col {
+    order: 2;
+  }
+  .faq .accordion li label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 19px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+  }
+  .faq .accordion li label::after {
+    content: "+";
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    transition: rotate 0.6s;
+    -webkit-transition: rotate 0.6s;
+    -moz-transition: rotate 0.6s;
+    -ms-transition: rotate 0.6s;
+    -o-transition: rotate 0.6s;
+  }
+  .faq h2 {
+    font-size: 36px;
+    font-weight: 500;
+  }
+  footer .footer-content {
+    align-items: center;
+  }
+  footer .ul-container {
+    display: flex;
+    gap: 2.4rem;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/***** End Section media screen *****/
