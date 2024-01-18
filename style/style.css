@@ -22,14 +22,34 @@ body {
     url(../images/header-image.png);
   background-size: cover;
   background-position: center;
-  padding: 10px 8%;
   position: relative;
 
   & .nav-bar {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 15px;
+    backdrop-filter: blur(9px);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    & .nav-content {
+      display: flex;
+      gap: 3rem;
+      align-items: center;
+    }
+    & ul {
+      display: flex;
+      gap: 1.6rem;
+
+      & li a {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+      }
+    }
 
     & .logo {
       width: 150px;
@@ -338,7 +358,13 @@ footer {
 /***** End scrollbar Section *****/
 
 /***** Section media screen *****/
-
+@media screen and (max-width: 1024px) {
+  .features .row {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
 @media screen and (width <= 768px) {
   .header .header-content h1 {
     font-size: 45px;
@@ -412,6 +438,9 @@ footer {
       }
     }
   }
+  .features .row {
+    flex-direction: column;
+  }
   .features .row .text-col h2 {
     font-size: 25px;
     font-weight: 600;
@@ -419,9 +448,6 @@ footer {
   }
   .features .row .text-col p {
     font-size: 16px;
-  }
-  .features .row {
-    flex-direction: column;
   }
   .secImg img {
     width: 100%;
