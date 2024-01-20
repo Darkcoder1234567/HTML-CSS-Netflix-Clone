@@ -495,13 +495,14 @@ footer {
     font-weight: 500;
   }
   footer .footer-content {
-    align-items: center;
+    align-items: left;
+    margin-left: 1.5rem;
   }
   footer .ul-container {
     display: flex;
     gap: 2.4rem;
     flex-direction: column;
-    align-content: center;
+    align-content: left;
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
