@@ -149,7 +149,6 @@ body {
     width: 100%;
     align-items: center;
     gap: 4rem;
-    flex-wrap: wrap;
     padding: 50px 0;
 
     & .text-col {
@@ -386,19 +385,7 @@ footer {
   }
   .header {
     & .btn-container button {
-      border: 0;
-      outline: 0;
-      background: #db0001;
-      color: #fff;
-      padding: 5px 15px;
-      font-size: 10px;
-      border-radius: 4px;
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
-      -o-border-radius: 4px;
-      margin-left: 10px;
-      cursor: pointer;
+    display: none;
     }
     & .btn-container .lan-btn {
       display: inline-flex;
@@ -517,7 +504,7 @@ footer {
   background: #141414;
   color: #fff;
 }
-.row {
+.movies-page-body .row {
   color: #fff;
   margin-left: 20px;
   margin-top: 2rem;
